@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "fc81d8aa-3b5d-49f5-9ff9-44c2b29e8619",
+		"name": "don't know",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30360569"
+	},
+	"item": [
+		{
+			"name": "upload file",
+			"item": [
+				{
+					"name": "uplod",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/Sandeep.Murmu/Downloads/data-sheet - Node js Assesment.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/api/v1/document",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get policy by user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{ENVIRONMENT}}/api/v1/user/h7bib57ht",
+							"host": [
+								"{{ENVIRONMENT}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"h7bib57ht"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
