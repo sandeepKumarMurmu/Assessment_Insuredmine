@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "26e275e0-dba5-4acc-b868-6ea989032240",
+		"name": "message-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30360569"
+	},
+	"item": [
+		{
+			"name": "list message",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"fjlsjflksjdf\",\n    \"date\": \"18/08/2024\",//dd/mm/yyyy\n    \"time\": \"10:48:00\"//hh:mm:ss\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ENVIRONMENT}}/api/v1/message",
+					"host": [
+						"{{ENVIRONMENT}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\": \"message 2\",\n    \"date\": \"18/08/2024\",//dd/mm/yyyy\n    \"time\": \"10:48:00\"//hh:mm:ss\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ENVIRONMENT}}/api/v1/message",
+					"host": [
+						"{{ENVIRONMENT}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
